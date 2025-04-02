@@ -2,10 +2,10 @@ package starfederation.example.springreactive.configuration;
 
 import org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-import org.springframework.stereotype.Component;
 
-@Component
+@Configuration
 public class ReactorSchedulerConfig implements ApplicationListener<ApplicationEnvironmentPreparedEvent> {
 
     @Override
