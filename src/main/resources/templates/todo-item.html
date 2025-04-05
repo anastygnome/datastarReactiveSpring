@@ -1,0 +1,8 @@
+<li class="todo-item" th:attr="data-id=${todo.id}">
+    <div class="todo-content">
+        <strong th:text="${todo.username}">Username</strong>
+        <span th:text="${todo.description}">Description</span>
+        <span th:if="${todo.completed}">Done</span>
+        <span th:unless="${todo.completed}">Pending</span>
+    </div>
+</li>
